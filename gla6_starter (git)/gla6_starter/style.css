@@ -1,0 +1,18 @@
+img{
+    width:28px;
+    height: 28px;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+td{
+    margin:auto;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-top-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    height:28px;
+
+}

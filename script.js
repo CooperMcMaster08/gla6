@@ -73,3 +73,6 @@ function displayAll(){
 }
 // This call looks for item 2; its stored ID is "002".
 
+search.addEventListener("input", function() {
+  console.log(search.value);
+});
