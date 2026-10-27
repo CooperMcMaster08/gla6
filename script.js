@@ -74,5 +74,14 @@ function displayAll(){
 // This call looks for item 2; its stored ID is "002".
 
 search.addEventListener("input", function() {
-  console.log(search.value);
+  const searchText = search.value.toLowerCase();
+
+  const results = items.filter(item =>
+    (item.name ?? "").toLowerCase().includes(searchText)
+  );
+  productList.querySelectorAll("tr").forEach(row => row.remove());
+
+  results.forEach(item => displayItem(item));
+  console.log(results);
+  console.log(items);
 });
